@@ -46,8 +46,8 @@ variable "deployment_regions" {
   default = {
     "japaneast" = {
       location = "japaneast"
-      vnet_address_space = "jp"
-      subnet_address_prefixes = "jp"
+      vnet_address_space = "10.0.0.0/24"
+      subnet_address_prefixes = "255.0.0.0"
     }
   }
 }
