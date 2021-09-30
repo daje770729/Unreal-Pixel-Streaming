@@ -43,6 +43,13 @@ variable "deployment_regions" {
     vnet_address_space      = string
     subnet_address_prefixes = string
   }))
+  default = {
+    "japaneast" = {
+      location = "japaneast"
+      vnet_address_space = "jp"
+      subnet_address_prefixes = "jp"
+    }
+  }
 }
 
 #Use if you want to create your own pre-reqs image for Windows 10 and not use the MSFT created one in the marketplace
