@@ -37,7 +37,6 @@ variable "keyvault_soft_delete_retention_days" {
 }
 
 #set the regional values in the terraform.tfvars
-/*
 variable "deployment_regions" {
   type = map(object({
     location                = string
@@ -45,7 +44,6 @@ variable "deployment_regions" {
     subnet_address_prefixes = string
   }))
 }
-*/
 
 #Use if you want to create your own pre-reqs image for Windows 10 and not use the MSFT created one in the marketplace
 /*
